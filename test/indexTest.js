@@ -16,7 +16,7 @@ describe('moveDodgerLeft()', () => {
 
     expect(newPosition).to.be.below(left)
   })
-})
+})  
 
 describe('moveDodgerRight()', () => {
   beforeEach(() => {
@@ -26,12 +26,9 @@ describe('moveDodgerRight()', () => {
   it('moves the DODGER to the right', () => {
     var left = dodger.style.left
     left = parseInt(left)
-
     moveDodgerRight()
-
     var newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
-
     expect(newPosition).to.be.above(left)
   })
 })
